@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timezone - Jetlag recovery planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jetlag Recovery Planner</h1>
+    <p>validating that we can accurately calculate the hour shift between locations.</p>
+
+    <div class="form-group">
+        <label for="origin">Origin Timezone</label>
+        <select id="origin"></select>
+    </div>
+
+    <div class="form-group">
+        <label for="destination">Destination Timezone</label>
+        <select id="destination"></select>
+    </div>
+
+    <button onclick="calculateOffset()">Calculate Shift</button>
+
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
